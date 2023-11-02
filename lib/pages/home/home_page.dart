@@ -1,5 +1,4 @@
 // lib/pages/home/home_page.dart
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:web_api_retrofit/pages/home/home_page_controller.dart';
@@ -34,13 +33,13 @@ class WeatherWidget extends ConsumerWidget {
     // 更新ボタン
     final TokyoButton = ElevatedButton(
       onPressed: () {
-        changeTokyo(ref);
+        ref.read(homePageControllerProvider).changeTokyo(ref);
       },
       child: const Text('東京'),
     );
     final RioButton = ElevatedButton(
       onPressed: () {
-        changeRio(ref);
+        ref.read(homePageControllerProvider).changeRio(ref);
       },
       child: const Text('リオデジャネイロ'),
     );

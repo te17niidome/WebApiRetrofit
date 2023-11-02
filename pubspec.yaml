@@ -64,7 +64,6 @@ dev_dependencies:
 
   # retrofit
   retrofit_generator: # add
-
   # json_serializable:  # add
   # build_runner:       # add
 
